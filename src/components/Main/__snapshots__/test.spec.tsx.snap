@@ -60,7 +60,8 @@ exports[`<Main /> should render the heading 1`] = `
   <h2
     class="c3"
   >
-    ReactJs, NextJs e Styled-components 
+    ReactJs, NextJs e Styled-components
+     
   </h2>
   <img
     alt="Imagem de um desenvolvedor sentado numa cadeira escrevendo um código no computador"
