@@ -1,10 +1,10 @@
-import {addDecorator} from '@storybook/react'
+import GlobalStyles from '../src/styles/global'
 
-import withGlobalStyles from './withGLobalStyles'
-
-
-addDecorator(withGlobalStyles)
-
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}
+export const decorators = [
+  (Story) => (
+    <>
+      <GlobalStyles />
+      <Story />
+    </>
+  )
+]

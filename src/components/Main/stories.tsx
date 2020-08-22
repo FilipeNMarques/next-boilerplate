@@ -1,16 +1,22 @@
-import { withKnobs, text } from '@storybook/addon-knobs'
+import { Story, Meta } from '@storybook/react/types-6-0'
 
 import Main from './index'
 
 export default {
   title: 'Main',
   component: Main,
-  decorators: [withKnobs]
+  // To set default args
+  args: {
+    title: 'Default title',
+    description: 'Default description'
+  }
+} as Meta
+
+export const Basic: Story = (args) => <Main {...args} />
+// With you want overwrite args
+Basic.args = {
+  title: 'Overwrite args title',
+  description: 'Overwrite description'
 }
 
-export const Basic = () => (
-  <Main
-    title={text('Title', 'React Avançado')}
-    description={text('Description', 'ReactJs, NextJs e Styled-components')}
-  />
-)
+export const Default: Story = (args) => <Main {...args} />
