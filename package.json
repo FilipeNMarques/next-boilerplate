@@ -36,8 +36,8 @@
     "@babel/preset-typescript": "^7.10.4",
     "@storybook/addon-essentials": "^6.0.16",
     "@storybook/react": "^6.0.16",
-    "@testing-library/jest-dom": "^5.11.3",
-    "@testing-library/react": "^10.4.8",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^10.4.9",
     "@types/jest": "^26.0.10",
     "@types/node": "^14.6.0",
     "@types/react": "^16.9.46",
@@ -58,6 +58,6 @@
     "plop": "^2.7.4",
     "prettier": "^2.0.5",
     "react-is": "^16.13.1",
-    "typescript": "^3.9.7"
+    "typescript": "^4.0.2"
   }
 }
